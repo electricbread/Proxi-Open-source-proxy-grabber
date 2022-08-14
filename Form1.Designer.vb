@@ -343,6 +343,7 @@ Partial Class Form1
         Me.btnGrab.BackColor = System.Drawing.Color.Black
         Me.btnGrab.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnGrab.FlatAppearance.BorderColor = System.Drawing.Color.Lime
+        Me.btnGrab.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGrab.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGrab.ForeColor = System.Drawing.Color.Lime
         Me.btnGrab.Location = New System.Drawing.Point(6, 385)
@@ -356,6 +357,7 @@ Partial Class Form1
         '
         Me.bsave.BackColor = System.Drawing.Color.Black
         Me.bsave.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.bsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bsave.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bsave.ForeColor = System.Drawing.Color.Lime
         Me.bsave.Location = New System.Drawing.Point(334, 385)
@@ -372,7 +374,7 @@ Partial Class Form1
         Me.proxieslist.ForeColor = System.Drawing.Color.Lime
         Me.proxieslist.FormattingEnabled = True
         Me.proxieslist.ItemHeight = 14
-        Me.proxieslist.Location = New System.Drawing.Point(6, 29)
+        Me.proxieslist.Location = New System.Drawing.Point(6, 25)
         Me.proxieslist.Name = "proxieslist"
         Me.proxieslist.Size = New System.Drawing.Size(649, 350)
         Me.proxieslist.TabIndex = 8
@@ -381,6 +383,7 @@ Partial Class Form1
         '
         Me.advanced_btn.BackColor = System.Drawing.Color.Black
         Me.advanced_btn.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.advanced_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.advanced_btn.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.advanced_btn.ForeColor = System.Drawing.Color.Lime
         Me.advanced_btn.Location = New System.Drawing.Point(6, 419)
@@ -393,6 +396,7 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.Black
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.ForeColor = System.Drawing.Color.Lime
         Me.Button1.Location = New System.Drawing.Point(6, 453)
         Me.Button1.Name = "Button1"
@@ -404,11 +408,13 @@ Partial Class Form1
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.Red
+        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.Lime
+        Me.Button2.FlatAppearance.BorderSize = 2
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(620, 3)
+        Me.Button2.Location = New System.Drawing.Point(626, 3)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(30, 31)
+        Me.Button2.Size = New System.Drawing.Size(24, 26)
         Me.Button2.TabIndex = 11
         Me.Button2.Text = "X"
         Me.Button2.UseVisualStyleBackColor = False
@@ -445,11 +451,11 @@ Partial Class Form1
     Friend WithEvents google As System.Windows.Forms.ColumnHeader
     Friend WithEvents https As System.Windows.Forms.ColumnHeader
     Friend WithEvents lastchecked As System.Windows.Forms.ColumnHeader
-    Public WithEvents btnGrab As System.Windows.Forms.Button
     Public WithEvents bsave As System.Windows.Forms.Button
     Friend WithEvents IM As System.Windows.Forms.ImageList
     Friend WithEvents proxieslist As ListBox
     Public WithEvents advanced_btn As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Public WithEvents btnGrab As Button
 End Class
